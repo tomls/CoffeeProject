@@ -1,0 +1,33 @@
+body {
+    display: block;
+}
+h1 {
+    color: #2775db;
+    text-align: center;
+}
+
+.coffee-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.coffee-list-item {
+    flex: 1 0 21%;
+    padding: 10px;
+    border: rgb(110, 110, 110) 2px dashed;
+    background-color: rgb(245, 245, 245);
+}
+
+.create-coffee-item {
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+.image {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
