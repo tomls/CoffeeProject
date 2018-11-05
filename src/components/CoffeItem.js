@@ -11,9 +11,9 @@ class CoffeeItem extends Component {
         return (
             <div>
                 <img src={this.props.coffee.imageURL} className="image"/>
-                <div>{ this.props.coffee.name }</div>
-                <div>{ this.props.coffee.price }</div>
-                <button onClick={ () => {
+                <div className="coffee-name">{ this.props.coffee.name }</div>
+                <div className="coffee-price">{ this.props.coffee.price }</div>
+                <button className="coffee-delete-button" onClick={ () => {
                     CoffeeAPI.DeleteCoffeeItem(
                         this.props.coffee.id, 
                         this.props.actions.DeleteCoffeeSuccess)
